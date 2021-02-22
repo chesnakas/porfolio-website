@@ -1,33 +1,150 @@
+@media (min-width: 100px) {
+    .headerContainer {
+        height: 150px;
+    }
+    
+    .header {
+        background: url("../images/mountain-wallpaper-opaque-width400px.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 45%;
+        height: 150px;
+    }
+
+    .topNavigation {
+        justify-content: center;
+    }
+
+    .topNavigation a {
+        width: 33%;
+        height: 30%;
+    }
+
+    .headerOverlay {
+        height: 70%;
+        top: 30%;
+    }
+
+    .headerOverlay div.nameContainer {
+        font-size: 10vw;
+    }
+
+    .headerOverlay div.descriptionContainer {
+        font-size: 5vw;
+    }
+
+    .topNavigation a.sideBorder:after {
+        opacity: 0;
+    }
+
+    .contentContainer {
+        width: 85%;
+    }
+}
+
+@media (min-width: 300px) {
+    .headerContainer {
+        height: 300px;
+    }
+
+    .header {
+        height: 300px;
+    }
+
+    .topNavigation {
+        height: 15%;
+    }
+    
+    .topNavigation a.sideBorder:after {
+        opacity: 1;
+    }
+
+    .headerOverlay {
+        height: 85%;
+        top: 15%;
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        background: url("../images/mountain-wallpaper-opaque-width900px.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 30%;        
+    }
+
+    .headerOverlay div.nameContainer {
+        font-size: 4vw;
+    }
+
+    .headerOverlay div.descriptionContainer {
+        font-size: 2vw;
+    }
+
+    .contentContainer {
+        width: 75%;
+    }
+
+    .titleContainer {
+        position: absolute;
+        width: 15%;
+    }
+
+    .paraContainer{
+        position: relative;
+        width: 75%;
+        left: 25%;
+    }
+
+    p.title {
+        float: right;
+    }
+}
+
+@media (min-width: 800px) {
+    .header {
+        background: url("../images/mountain-wallpaper-opaque.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 30%;
+    }
+
+    .topNavigation {
+        justify-content: flex-end;
+    }
+
+    .topNavigation a {
+        width: 10%;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
+.headerContainer {
+    width: 100%;
+}
+
 .header {
     position: absolute;
-    background: url("../images/mountain-wallpaper-opaque.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0% 30%;
     width: 100%;
-    height: 300px;
 }
 
 .topNavigation {
     display: flex;
-    justify-content: flex-end;
     width: 100%;
-    height: 50px;
-    line-height: 50px;
-    color: white;
+    line-height: 330%;
     font-size: 15px;
 }
 
 .topNavigation a{
-    font-family: "helvetica";
+    font-family: "dosis";
     text-align: center;
-    width: 10%;
     transition: 0.5s;
+    color: white;
+    text-decoration: none;
 }
 
 .topNavigation a.sideBorder {
@@ -52,8 +169,6 @@ body {
 .headerOverlay {
     position: relative;
     width: 100%;
-    height: 250px;
-    top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,15 +176,46 @@ body {
 }
 
 .headerOverlay div.nameContainer {
-    font-family: "helvetica";
-    font-size: 50px;
+    font-family: "dosis";
     color: white;
     font-variant: small-caps;
 }
 
 .headerOverlay div.descriptionContainer {
-    font-family: "helvetica";
-    font-size: 20px;
+    font-family: "dosis";
     color: white;
     font-variant: small-caps;
+}
+
+.contentContainer {
+    height: 1000px;
+    margin: 0 auto;
+}
+
+#about {
+    width: 100%;
+    margin-top: 5%;
+}
+
+p.title {
+    font-variant: small-caps;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: "dosis";
+}
+
+.skillsBar {
+    display: flex;
+    flex-direction: row;
+}
+
+span.skill {
+    flex-grow: 1;
+    text-align: center;
+    font-family: "dosis";
 }

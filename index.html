@@ -2,20 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="header">
-            <div class="topNavigation">
-                <a class="sideBorder" id="projects">Projects</a>
-                <a class="sideBorder" id="about">About</a>
-                <a id="contact">Contact</a>
+        <div class="headerContainer">
+            <div class="header">
+                <div class="topNavigation">
+                    <a class="sideBorder" href="#about">About</a>
+                    <a class="sideBorder" href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="headerOverlay">
+                <div class="nameContainer">Dominykas Eičinas</div>
+                <div class="descriptionContainer">front-end developer</div>
             </div>
         </div>
-        <div class="headerOverlay">
-            <div class="nameContainer">Dominykas Eičinas</div>
-            <div class="descriptionContainer">front-end developer</div>
+        <div class="contentContainer">
+            <div id="about">
+                <div class="titleContainer">
+                    <p class="title">About me</p>
+                </div>
+                <div class="paraContainer">
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse a turpis purus. In hac habitasse platea dictumst. Proin 
+                        bibendum elit sit amet augue efficitur iaculis. Suspendisse posuere, 
+                        urna ac feugiat congue, lacus velit hendrerit nibh, ac condimentum 
+                        leo felis eu nisl. Sed a velit urna. Nunc ex metus, consectetur et 
+                        commodo ac, maximus quis tortor. Curabitur aliquam eleifend euismod. 
+                        Integer leo nisl, auctor non faucibus hendrerit, porta et nisi. 
+                        Suspendisse non tincidunt metus. Aenean a quam lorem. Aenean euismod 
+                        risus ut porta congue. Phasellus dictum molestie suscipit.
+                    </p>
+                    <div class="skillsBar">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">jQuery</span>
+                        <span class="skill">Bootstrap</span>  
+                    </div>   
+                </div>        
+            </div>
         </div>
     </body>
 </html>
