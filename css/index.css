@@ -96,6 +96,12 @@
         left: 25%;
     }
 
+    .projectContainer{
+        position: relative;
+        width: 75%;
+        left: 25%;
+    }
+
     p.title {
         float: right;
     }
@@ -188,7 +194,6 @@ body {
 }
 
 .contentContainer {
-    height: 1000px;
     margin: 0 auto;
 }
 
@@ -207,6 +212,8 @@ p.title {
 
 p {
     font-family: "dosis";
+    font-size: 18px;
+    text-align: justify;
 }
 
 .skillsBar {
@@ -218,4 +225,103 @@ span.skill {
     flex-grow: 1;
     text-align: center;
     font-family: "dosis";
+    font-size: 18px;
+}
+
+#projects {
+    margin-top: 5%;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project a img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.project a img:hover {
+    opacity: 0.8;
+}
+
+.projectBottomPanel {
+    box-sizing: border-box;
+    position: relative;
+    top: 200px;
+    width: 200px;
+    height: 100px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectName {
+    color: black;
+    text-align: center;
+    font-variant: small-caps;
+    padding: 10px;
+    margin: 0;
+    transition: 0.3s;
+    flex-grow: 1;
+}
+
+.projectName:hover {
+    color: rgb(170, 170, 170);
+}
+
+.githubLink {
+    color: black;
+    font-family: "dosis";
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    transition: 0.3s;
+    flex-grow: 1;
+}
+
+.githubLink:hover {
+    color: rgb(170, 170, 170);
+}
+
+#contact {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contactsTable {
+    border-collapse: collapse;
+}
+
+.tableKey {
+    font-family: "dosis";
+    padding: 10px;
+    font-size: 18px;
+    width: 100px;
+}
+
+.tableValue {
+    font-family: "dosis";
+    font-size: 18px;
 }
