@@ -9,7 +9,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="headerContainer">
+        <div id="animWrapper">
+            <div id="animContainer">
+                <p id="textLarge">Dominykas Eičinas</p>
+                <p id="textSmall">front-end developer</p>
+            </div>
+        </div>
+        <div id="headerContainer">
             <div class="header">
                 <div class="topNavigation">
                     <a class="sideBorder" href="#about">About</a>
@@ -22,7 +28,7 @@
                 <div class="descriptionContainer">front-end developer</div>
             </div>
         </div>
-        <div class="contentContainer">
+        <div id="contentContainer">
             <div id="about">
                 <div class="titleContainer">
                     <p class="title">About me</p>
@@ -51,7 +57,7 @@
                     <p class="title">Projects</p>
                 </div>
                 <div class="projectContainer">
-                    <div class="project">
+                    <div class="project colOne">
                         <a href="../tictactoe/main.html"><img src="images/tictactoe-logo.png"></a>
                         <div class="projectBottomPanel">
                             <a href="../tictactoe/main.html"><p class="projectName">Tic-tac-toe game</p></a>
@@ -60,7 +66,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project colTwo">
                         <a href="../calculator/main.html"><img src="images/calculator-logo.png"></a>
                         <div class="projectBottomPanel">
                             <a href="../calculator/main.html"><p class="projectName">Calculator</p></a>
@@ -69,11 +75,38 @@
                             </a>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project colThree">
                         <a href="../budgeting app/main.html"><img src="images/budgeting-logo.png"></a>
                         <div class="projectBottomPanel">
                             <a href="../budgeting app/main.html"><p class="projectName">Budgeting App</p></a>
                             <a href="https://github.com/dominykase/Budgeting-App">
+                                <p class="githubLink">Github Repo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project colOne">
+                        <a href="../tictactoe/main.html"><img src="images/puppy1.jfif"></a>
+                        <div class="projectBottomPanel">
+                            <a href="../tictactoe/main.html"><p class="projectName">Dummy project</p></a>
+                            <a href="https://github.com/dominykase/TicTacToe">
+                                <p class="githubLink">Github Repo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project colTwo">
+                        <a href="../tictactoe/main.html"><img src="images/puppy2.jfif"></a>
+                        <div class="projectBottomPanel">
+                            <a href="../tictactoe/main.html"><p class="projectName">Dummy project</p></a>
+                            <a href="https://github.com/dominykase/TicTacToe">
+                                <p class="githubLink">Github Repo</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project colThree">
+                        <a href="../tictactoe/main.html"><img src="images/puppy3.jfif"></a>
+                        <div class="projectBottomPanel">
+                            <a href="../tictactoe/main.html"><p class="projectName">Dummy project</p></a>
+                            <a href="https://github.com/dominykase/TicTacToe">
                                 <p class="githubLink">Github Repo</p>
                             </a>
                         </div>
@@ -98,5 +131,8 @@
                 </div>
             </div>
         </div>
+        <div id="footerContainer"></div>
+    <script type="text/javascript" src="js/velocity.min.js"></script>
+    <script type="text/javascript" src="js/animations.js"></script>
     </body>
 </html>
